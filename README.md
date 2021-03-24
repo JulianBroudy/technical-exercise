@@ -17,5 +17,5 @@
     - Loop over only the last name to enable autocomplete if only last name was typed.
 
 
-### The UI has autocomplete dropdown list that technically does the process by itself but I implemented it in a way that with each keystroke change it calls the @RestController.
-### Added another option to press the button or "Enter" to illustrate the process implemented in a different way using @Controller and some Exceptions.
+#### The UI has autocomplete dropdown list that technically does the process by itself but I implemented it in a way that with each keystroke change it calls the @RestController.
+#### Added another option to press the button or "Enter" to illustrate the process implemented in a different way using @Controller and some Exceptions.
