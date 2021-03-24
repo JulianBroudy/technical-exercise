@@ -12,7 +12,7 @@ public class Trie {
 		return root;
 	}
 
-	// TODO ask if this is enough?
+	// TODO make sure "synchronized" is enough and does the job.
 	public synchronized void insert(Entry entry, String word) {
 		TrieNode current = root;
 		TrieNode[] children;
