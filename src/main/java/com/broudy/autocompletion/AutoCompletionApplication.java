@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import com.broudy.autocompletion.repository.EntryRepository;
 import com.broudy.autocompletion.service.CachedEntries;
+import com.broudy.autocompletion.service.CachedEntriesWithTrie;
 
 @SpringBootApplication
 public class AutoCompletionApplication {
@@ -21,7 +22,8 @@ public class AutoCompletionApplication {
 
 		@Override
 		public void run(String... args) throws Exception {
-			CachedEntries cachedEntries = CachedEntries.getInstance();
+//			CachedEntries cachedEntries = CachedEntriesWithMap.getInstance();
+			CachedEntries cachedEntries = CachedEntriesWithTrie.getInstance();
 			cachedEntries.cacheEntries(entryRepository.findAll());
 		}
 

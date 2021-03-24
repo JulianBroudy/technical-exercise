@@ -199,4 +199,6 @@ INSERT INTO entry (name) VALUES
 ('Marco'),
 ('Bryson'),
 ('Martin'),
-('Julian Broudy');
+('Julian Broudy'),
+('Gil Paz'),
+('Senior Gil Paz');
