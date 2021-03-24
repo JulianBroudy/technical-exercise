@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<style>
+	body{
+		padding: 40px;
+	}
+	</style>
+	<script type="text/javascript">
+		$(function () {
+			$("#name-input").autocomplete({
+				source: "nameAutocomplete",
+				minLength: 1,
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<center>
+		</br>
+		<h1>Technical Exercise</h1>
+	</center>
+	<br><br>
+
+
+	<form action="#" th:action="@{/}" th:object="${entry}" method="post">
+	Please provide valid names (letters and spaces)...
+		<div class="input-group input-group-lg">
+			<span class="input-group-text" id="inputGroup-sizing-lg">Type a name:</span>
+			<input id="name-input" type="text" th:field="*{name}" class="form-control" aria-label="Sizing example input"
+				aria-describedby="inputGroup-sizing-lg">
+			<button class="btn btn-outline-secondary" type="submit" id="button-addon2">Get List</button>
+		</div>
+	</form>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+		integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+		integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
